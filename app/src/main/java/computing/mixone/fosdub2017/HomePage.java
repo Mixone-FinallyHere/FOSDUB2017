@@ -48,12 +48,14 @@ public class HomePage extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        wView = (WebView) findViewById(R.id.webView);
+        //wView = (WebView) findViewById(R.id.webView);
 
         String dancer = "dancing_stick", fighter = "dance_fight",
                 cool = "cool_dance", tap = "tap_dance",
                 spidey = "spidey_dance";
-        wView.loadUrl("file:///android_res/drawable/" + spidey + ".gif");
+        //wView.loadUrl("file:///android_res/drawable/" + spidey + ".gif");
+        //wView = (WebView) findViewById(R.id.webView2);
+        //wView.loadUrl("file:///android_res/drawable/" + spidey + ".gif");
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -79,7 +81,7 @@ public class HomePage extends AppCompatActivity
                 frag = LineUpFragment.newInstance(position + 1);
                 break;
             case 2: // Prices
-                frag = PlaceholderFragment.newInstance(position + 1);
+                frag = PricesFragment.newInstance(position + 1);
                 break;
             case 3: // Rules
                 frag = RulesFragment.newInstance(position + 1);

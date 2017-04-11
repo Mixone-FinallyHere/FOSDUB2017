@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.Fragment;
+import android.text.method.LinkMovementMethod;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,8 +64,13 @@ public class LineUpFragment extends Fragment {
     }
     public class customListAdapter extends BaseExpandableListAdapter {
         // Sample data set.  children[i] contains the children (String[]) for groups[i].
-        private String[] groups = { "Main Stage", "Tour de Samme Stage" };
-        private String[][] children = { {"Omar Perry", "Kandee DUB meet Jahzz", "Bunzero", "Reservoir DUB Ft Soul Skankin'"}, {"Global Hybrid Records"}};
+        private String[] groups = { "▬ ▬ Main Stage ▬ ▬\nHigh 'n' Irie crew\n\n♫ Very Special Guests ♫",
+                "Tour de Samme Stage\nPowered by BE:PULSED\n\n♫ Hip hop ♫ Electro swing ♫ Jungle ♫ Techno ♫ Minimal ♫ Dubstep ♫" };
+        private String[][] children = { {"Omar Perry - Live", "Kandee DUB meet Jahzz - Live & Sax", "Bunzero", "Reservoir DUB ft Soul Skankin'", "Catch My Bass Crew"},
+                {"Pneumotracks ft SEKA - Live Scratch & Beatbox\nTDS crew","Global Hybrid Records - Ethno/Techno/Fanfare",
+                        "Rastacore - Dub/Jungle/Electroswing\nTDS crew", "Phonetics - Afro-Beat/Dubstep\n54 KOLAKTIV", "DJ SEW - Reggae/Dub/Steppa\nTDS crew",
+                "BE:PULSED\n► CRAWL - Techno\n► The DIOUD - Minimal\n► SUBJECTIVE VIBES - Psytrance"}
+        };
 
         public Object getChild(int groupPosition, int childPosition) {
             return children[groupPosition][childPosition];
@@ -82,11 +88,12 @@ public class LineUpFragment extends Fragment {
                                  View convertView, ViewGroup parent) {
 
             TextView textView = new TextView(LineUpFragment.this.getContext());
-            textView.setBackgroundColor(Color.BLACK);
-            textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
-            textView.setPadding(100, 0, 0, 0);
-            textView.setTextColor(Color.WHITE);
-            textView.setTextSize(20);
+            textView.setMovementMethod(LinkMovementMethod.getInstance());
+            //textView.setBackgroundResource(R.drawable.gradient_big);
+            textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+            textView.setPadding(50, 25, 50, 25);
+            textView.setTextColor(Color.BLACK);
+            textView.setTextSize(18);
             textView.setText(getChild(groupPosition, childPosition).toString());
             return textView;
         }//getChildView
@@ -106,11 +113,11 @@ public class LineUpFragment extends Fragment {
         public View getGroupView(int groupPosition, boolean isExpanded, View convertView,
                                  ViewGroup parent) {
             TextView textView = new TextView(LineUpFragment.this.getContext());
-            textView.setBackgroundColor(Color.WHITE);
-            textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
-            textView.setPadding(100, 0, 0, 0);
+            textView.setBackgroundResource(R.drawable.gradient_big);
+            textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+            textView.setPadding(50, 0, 50, 0);
             textView.setTextColor(Color.BLACK);
-            textView.setTextSize(25);
+            textView.setTextSize(20);
             textView.setText(getGroup(groupPosition).toString());
 
         /*Button btn = new Button(MLT_File.this);

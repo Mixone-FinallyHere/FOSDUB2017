@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_backg">
+
+    <TextView
+        android:text="Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="Presales : 3 € \nFrom 20pm 5€"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="In Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="BAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="Beer : 1,5 € \nSpecial Beers: 3€\n\tLoads to choose from!"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="FOOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="Food Truck will be available serving different kinds of food!"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="AMENITIES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="Kicker\nChill Zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="Security Will Be Present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_margin="10dp" />
+</LinearLayout>

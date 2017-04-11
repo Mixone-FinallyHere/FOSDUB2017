@@ -1,12 +1,91 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".HomePage$PlaceholderFragment">
+    tools:context=".HomePage$PlaceholderFragment"
+    android:background="@drawable/gradient_backg">
 
     <TextView android:id="@+id/section_label" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="FOSDUB\n   2017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView12"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="★ Pre-sales 3€ ★ From 20 pm 5€ ★\nThis event needs your support to go on and get bigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=" In this year's edition, secured area will be expanded, adding to the original parking area a part of the nearby park where a chill out stage will be set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:src="@drawable/rabbit"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_toLeftOf="@+id/textView12"
+        android:layout_toStartOf="@+id/textView12"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="22dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:src="@drawable/fox"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:text="The FOSCUP , HIGH 'N' IRIE Sound system, and TOUR DE SAMME asbl are getting back to work to present to you the prime open air event of april"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:text="Program : Sound, Sun, Drinks, Food and a Chill Out zone. What more can we ask ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginTop="41dp" />
 
 </RelativeLayout>

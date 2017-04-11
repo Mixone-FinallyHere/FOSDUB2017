@@ -16,21 +16,19 @@
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:id="@+id/webView"
-            android:layout_gravity="center_horizontal|top"
+            android:layout_gravity="right|top"
+            android:background="@android:color/white"
+            android:layout_below="@+id/section_label"
+            android:layout_centerHorizontal="true" />
+        <WebView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:id="@+id/webView2"
+            android:layout_gravity="left|top"
             android:background="@android:color/white"
             android:layout_below="@+id/section_label"
             android:layout_centerHorizontal="true" />
 
-        <TextView
-            style="@style/TextAppearance.AppCompat.Display3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="FOSDUB\n   2017"
-            android:id="@+id/textView2"
-            android:layout_gravity="center"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
     </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
